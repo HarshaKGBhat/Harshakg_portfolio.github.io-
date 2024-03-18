@@ -1,0 +1,28 @@
+/*
+	Big Picture by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/* Loader */
+
+	body:before, body:after {
+		display: none;
+	}
+
+
+/*Headre*/
+#intro h2 {
+    font-size: 3.5em; /* Adjust font size as needed */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#intro p {
+    font-size: 1.2em; /* Adjust font size as needed */
+    line-height: 1.6;
+}
+
+#intro .highlight {
+    color: #4CAF50; /* Highlight color */
+}
