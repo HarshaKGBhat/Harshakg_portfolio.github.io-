@@ -1,11 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("fontawesome-all.min.css");
+@import url("https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css");
 
-/*
-	Big Picture by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -621,7 +618,7 @@ input, select, textarea {
 /* Box */
 
 	.box {
-		background: #ffffff;
+		background: #da0505;
 		color: #39454b;
 		padding: 2em;
 	}
@@ -1822,108 +1819,160 @@ input, select, textarea {
 		}
 
 /* Header */
-
 #header {
-	position: fixed;
-	z-index: 10000;
-	left: 0;
-	top: 0;
-	width: 100%;
-	background: rgba(58, 3, 142, 0.95);
-	height: 3em;
-	line-height: 3em;
-	box-shadow: 0 0 0.15em 0 rgba(181, 208, 4, 0.623);
-	
-	/* Hover effect */
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 3em;
+  line-height: 3em;
+  background: rgba(58, 3, 142, 0.95); /* your purple */
+  box-shadow: 0 0 0.15em 0 rgba(181, 208, 4, 0.623);
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.5em;
+}
+
+/* Hover effect for the fixed header */
 .fixed-header:hover {
-background: rgb(2, 0, 6); /* Change background color on hover */
-color: #fff; /* Change text color on hover */
+  background: rgb(2, 0, 6);
+  color: #fff;
 }
+
+/* Brand (left) */
+#header h1 {
+  position: absolute;
+  left: 0.3em;
+  top: 0;
+  height: 3em;
+  line-height: 1.9em;
+  cursor: pointer;
+}
+#header h1 a {
+  font-size: 1.0em;
+  color: #fc0303;            /* readable yellow */
+  text-decoration: none;
+  text-shadow: 0 0 6px rgb(255, 255, 255);
 }
 
-	#header h1 {
-		position: absolute;
-		left: 1em;
-		top: 0;
-		height: 3em;
-		line-height: 3em;
-		cursor: default;
-	}
+/* Hamburger button (always visible) */
+/* Hide hamburger on desktop */
+.menu-toggle {
+  display: none;
+}
 
-		#header h1 a {
-			font-size: 1.25em;
-		}
+/* Show nav horizontally on desktop */
+#header nav {
+  display: block;  /* always visible on desktop */
+  position: absolute;
+  right: 0.5em;
+  top: 0;
+  height: 3em;
+  line-height: 3em;
+  background: transparent;  /* remove dropdown box */
+  padding: 0;
+}
 
-	#header nav {
-		position: absolute;
-		right: 0.5em;
-		top: 0;
-		height: 3em;
-		line-height: 3em;
-	}
+#header nav ul {
+  display: flex;     /* horizontal layout */
+  gap: 0.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-		#header nav ul {
-			margin: 0;
-		}
+#header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 0.5em;
+  font-size: 0.75em;
+  line-height: 3em;
+  transition: color 0.2s ease-in-out;
+}
+#header nav ul li a:hover {
+  color: #ffe600;
+}
 
-			#header nav ul li {
-				display: inline-block;
-				margin-left: 0.5em;
-				font-size: 0.9em;
-			}
+/* Mobile overrides */
+/* Mobile overrides */
+@media screen and (max-width: 736px) {
+  /* Mobile nav hidden by default */
+  #header nav {
+    display: none !important;
+    position: absolute;
+    top: 2.5em;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.95) !important;  /* solid black background */
+    border-radius: 0 0 8px 8px;
+    width: 100%;
+    padding: 0;                /* remove padding here */
+    z-index: 9999;
+  }
+  /* Hamburger button */
+  .menu-toggle {
+    display: block;
+    margin-left: 22.5em;
+	margin-top: 0.67em;
+    font-size: 1.0rem;
+    color: #fdfdfa;
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5em;
+    z-index: 10; /* sits above */
+  }
 
-				#header nav ul li a {
-					display: block;
-					color: inherit;
-					text-decoration: none;
-					height: 3em;
-					line-height: 3em;
-					padding: 0 0.25em 0 0.25em;
-					outline: 0;
-					margin-bottom: -14px;
-				}
+  /* Show nav when active */
+  #header nav.active {
+    display: block !important;
+  }
 
-	@media screen and (max-width: 736px) {
+  /* Vertical list */
+  #header nav ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.95);  /* <<< add background to ul too */
+  }
 
-		#header {
-			height: 2.5em;
-			line-height: 2.5em;
-		}
+  #header nav ul li {
+    display: block;
+    width: 100%;
+    background: rgba(0,0,0,0.95);  /* <<< ensure li rows are black */
+  }
 
-			#header h1 {
-				text-align: center;
-				position: relative;
-				left: 0;
-				top: 0;
-				height: 2.5em;
-				line-height: 2.5em;
-			}
+  #header nav ul li a {
+    display: block;
+    padding: 0.75em 1em;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+  }
 
-				#header h1 a {
-					font-size: 1em;
-				}
+  #header nav ul li a:hover {
+    background: rgba(255,255,255,0.1);
+  }
+}
 
-			#header nav {
-				display: none;
-			}
-			#footer 
-			h1:hover {
-				color: #1e0e42;
-			}
 
-	}
 
+/* Ensure content not hidden behind fixed header */
 body {
-	padding-top: 3em;
+  padding-top: 3em;
+}
+@media screen and (max-width: 736px) {
+  body { padding-top: 2.5em; }
 }
 
-	@media screen and (max-width: 736px) {
+/* Smooth anchor scrolling & fixed-header offset fix for modern browsers */
+html { scroll-behavior: smooth; }
+section[id] { scroll-margin-top: 4em; }
 
-		body {
-			padding-top: 2.5em;
-		}
-
-	}
 /* Main */
 
 	.main {
@@ -2111,50 +2160,64 @@ body {
 
 		@media screen and (max-width: 736px) {
 
-			.main > .content br {
-				display: none;
-			}
+  .main > .content br {
+    display: none;
+  }
 
-			.main.fullscreen {
-				height: auto !important;
-			}
+  .main.fullscreen {
+    height: auto !important;
+  }
 
-			.main.style1 {
-				padding: 4em 15px 4em 15px;
-			}
+  /* Reduce top/bottom spacing for the intro */
+  .main.style1 {
+    padding: -5em 10px -5em 10px !important;
+  }
 
-				.main.style1 h2 {
-					font-size: 3em;
-				}
+  /* Override heading size + spacing */
+  #intro h2 {
+    font-size: 2.6rem !important;
+    margin-top: -10rem !important;   /* pull text upward */
+    margin-bottom: 7.0rem !important;
+  }
 
-			.main.style2 {
-				padding: 6em 15px 6em 15px;
-			}
+  /* Description line (typewriter effect) */
+  #intro p.typewriter {
+    font-size: 0.89rem !important;
+    margin-top: -5rem !important;
+    margin-bottom: 0.6rem !important;
+  }
 
-				.main.style2:before, .main.style2:after {
-					display: none !important;
-				}
+  /* Remove the conflicting larger size */
+  .main.style1 h2 {
+    font-size: 2.2rem !important;
+  }
 
-				.main.style2 .button.anchored {
-					display: none;
-				}
+  .main.style2 {
+    padding: -6em 15px;
+  }
 
-				.main.style2 .content {
-					width: 100%;
-					max-width: 100%;
-					text-align: center;
-					-moz-transform: none;
-					-webkit-transform: none;
-					-ms-transform: none;
-					transform: none;
-				}
+  .main.style2:before,
+  .main.style2:after {
+    display: none !important;
+  }
 
-			.main.style3 {
-				text-align: center;
-				padding: 3em 10px 3em 10px;
-			}
+  .main.style2 .button.anchored {
+    display: none;
+  }
 
-		}
+  .main.style2 .content {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    transform: none;
+  }
+
+  .main.style3 {
+    text-align: center;
+    padding: -0.8em 10px;
+  }
+}
+
 
 		@media screen and (max-width: 480px) {
 
@@ -2184,7 +2247,7 @@ body {
 		line-height: 1em;
 		padding: 1.5em;
 		background: #79b9da;
-		color: rgb(104, 230, 152);
+		color: rgb(0, 5, 2);
 		overflow: hidden;
 	}
 
@@ -2251,32 +2314,192 @@ body {
 /* Intro */
 
 	#intro {
-		background: url("images/overlay.png"), url("../../images/fulls/211836.jpg");
-		background-size: 256px 256px, cover;
+		background: url("images/overlay.png"), url("../../images/thumbs/background_img_new.jpg");
+		background-size: cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
 		background-repeat: repeat, no-repeat;
 	}
 
-/* One */
+/* Journey */
 
-	#one {
-		background: url("images/overlay.png"), url("../../");
+	#Journey {
+		background-color: #000000;
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
+		border-top: 2px solid #222;
+  		box-shadow: inset 0 5px 20px rgba(0, 0, 0, 0.6);
 		height: 1150px;
 	}
 
-/* Two */
 
-	#two {
-		background: url("images/overlay.png"), url("../../");
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, center center;
-		height: 800px;
-	}
+/* One */
+
+	/* One */
+
+/* Basic layout */
+#one { background-color:#fc0b94; min-height:100vh; display:flex; align-items:center; }
+.simple-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Robot on left (desktop only) */
+.robot-scene {
+  flex: 1;
+  text-align: center;
+}
+
+.robot-img {
+  max-width: 600px;
+  height: auto;
+}
+
+/* Text box */
+.what-text {
+  flex: 1;
+  background: rgb(110, 8, 234);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.what-text h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.what-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Mobile view */
+@media screen and (max-width: 768px) {
+	#one { background-color:#103056; min-height:100vh; display:flex; align-items:center; }
+  .simple-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .robot-scene {
+    display: none; /* Hide robot on mobile */
+  }
+
+  .what-text {
+    width: 100%;
+    padding: 1.5rem;
+	background-color: #920000;
+  }
+}
+
+/* Section background */
+/* Section should fill exactly one screen */
+#two {
+  background-color: #162447;
+  min-height: 100vh;      /* full viewport height */
+  display: flex;
+  align-items: center;    /* vertical centering of content */
+  padding: 0;             /* reset padding to avoid extra space */
+}
+
+/* Parent flexbox */
+.two-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 2rem 5%;       /* some breathing room on sides */
+  box-sizing: border-box;
+}
+
+/* Left side (intro) */
+.intro-content {
+  flex: 1;
+  max-width: 45%;
+  color: #fff;
+}
+
+/* Center heading only */
+.intro-content header h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Justify only the paragraph text */
+.intro-content p {
+  text-align: justify;
+}
+
+
+/* Right side (carousel) */
+.carousel-container {
+  flex: 1;
+  max-width: 55%;
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+}
+
+/* Track with sliding animation */
+.carousel-track {
+  display: flex;
+  width: max-content; /* auto-expand to fit all images */
+  animation: slide 30s linear infinite;
+}
+
+/* Images */
+.carousel-track img {
+  width: 240px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-right: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Smooth infinite sliding */
+@keyframes slide {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* move by half because we duplicated */
+}
+
+
+/* Mobile responsive */
+@media screen and (max-width: 768px) {
+  #two {
+    min-height: auto;      /* allow scroll on mobile */
+    padding: 2rem 1rem;
+  }
+  .two-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .intro-content,
+  .carousel-container {
+    max-width: 100%;
+  }
+  .carousel-track img {
+    width: 100%;
+    height: 450px;
+  }
+  
+  .carousel-track {
+    animation: slide 22s linear infinite; /* smaller time for smaller screens */
+  }
+
+}
+
+
+
 
 /* Contact */
 
@@ -2319,3 +2542,50 @@ body {
 			}
 
 		}
+
+		/* ============================
+   MOBILE RESPONSIVE STYLES
+   ============================ */
+@media screen and (max-width: 768px) {
+  /* Adjust hero section */
+  #intro h2 {
+    font-size: 2.2rem;
+    margin-top: 1rem;
+  }
+
+  .typewriter {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .button {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+
+  /* Drones and Robot shrink */
+  .drone-animation,
+  .robot-animation {
+    width: 45px;
+  }
+
+  /* Timeline mobile stack */
+  .journey-timeline {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-block {
+    width: 90%;
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .journey-title h2 {
+    font-size: 1.8rem;
+  }
+
+  .journey-title p {
+    font-size: 1rem;
+  }
+}

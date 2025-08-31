@@ -1,8 +1,4 @@
-/*
-	Big Picture by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
 
 (function($) {
 
@@ -217,3 +213,24 @@
 			});
 
 })(jQuery);
+
+
+  function redirectToYoutube(url) {
+    window.open(url, "_blank"); // Opens in a new tab
+  }
+
+
+const allButtons = document.querySelectorAll('button, a.btn');
+  allButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const label = btn.innerText || btn.id || 'Unknown';
+      gtag('event', 'button_click', {
+        'event_category': 'Button',
+        'event_label': label
+      });
+    });
+  });
+
+
+
+

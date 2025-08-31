@@ -1,118 +1,750 @@
 <!DOCTYPE HTML>
-
 <html>
-	<head>
-		<title>HARSHA KELADI GANAPATHI</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			body {
-				background-color: #079bf7; /* Fallback color */
-				background-image: linear-gradient(135deg, #ff6b6b, #4361ee, #3f37c9); /* Gradient background */
-				background-size: cover;
-				background-blend-mode: overlay; /* Blend mode for overlay effect */
-				background-repeat: no-repeat;
-			}
-		</style>
-	</head>
-       
-	<body class="is-preload">
+<head>
+  <meta charset="utf-8" />
+  <title>HARSHA KELADI GANAPATHI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-		<!-- Header -->
-			<header id="header">
-				<h1>HARSHA KELADI GANAPATHI</h1>
-				<nav>
-					<ul>
-						<li><a href="#intro"></a></li>
-						<li><a href="#one">What I Do</a></li>
-						<li><a href="#two">Who I Am</a></li>
-						<li><a href="#works">My Work</a></li>
-						<li><a href="#certifications">Certifications</a></li>
-						<li><a href ="#Achievement">Achievements</a></li>
-						<li><a href ="#skills">Skills</a></li>
-						<li><a href="#contact">Contact</a></li>
-						<li><a href="https://www.linkedin.com/in/harsha-keladi-ganapathi-442ab9234/">linkedln</a></li>
-					</ul>
-				</nav>
-			</header>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4N7F6GD88L"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4N7F6GD88L');
+  </script>
 
-	<!-- Intro -->
-<style>
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+<!-- NEW -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
+  <style>
+    body {
+      background-color: #000;
+      background-image: url('images/fulls/background_img.jpg'); /* Corrected relative path */
+      background-size: cover;
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    #header h1 {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #ffffff;
+      text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700;
+      padding-left: 0.1rem;
+      margin-bottom: -10.5rem;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #fefefb, 0 0 20px #fdfdfd;
+      }
+      to {
+        text-shadow: 0 0 200px #ffdb58, 0 0 600px #ff4000;
+      }
+    }
+
     .button {
-        display: inline-block;
-        background-color: #007bff;
-        color: #ffe600;
-        font-size: 16px;
-        font-weight: bold;
-        text-decoration: none;
-        padding: 15px 24px;
-        border-radius: 6px;
-        transition: background-color 0.3s ease;
-        border: none;
-        cursor: pointer;
-        position: center;
+      display: inline-block;
+      background-color: #ffffff;
+      color: #ffe600;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 15px 24px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+      border: none;
+      cursor: pointer;
+      margin-top: 40px;
     }
 
     .button:hover {
-        background-color: #0056b3;
+      background-color: #0056b3;
     }
 
-    /* Updated CSS */
     .content {
-        margin: auto;
-        text-align: center;
-        max-width: 600px; /* Adjust max-width as needed */
+      margin: auto;
+      text-align: center;
+      max-width: 1000px;
+      color: white;
+      animation: fadeIn 2s ease;
     }
-</style>
 
-<!-- Intro -->
-<section id="intro" class="main style1 dark fullscreen">
-    <div class="content">
-        <header>
-            <h2><span class="highlight">HARSHA K G</span></h2>
-        </header>
-        <strong>Data Science Enthusiast and <strong>Master's student in Data Science at University of New Haven, CT</strong>. <br />
-        <a href="https://drive.google.com/file/d/1WPIKFGBVYzMUUoy1Fj-WA2fkF6iuqqUO/view?usp=drive_link" target="_blank" rel="noopener noreferrer"><button class="button">Download Resume</button></a></strong>
-        <footer>
-            <a href="#one" class="button style2 down">More</a>
-            <h1>View My portfolio</h1>
-        </footer>
-    </div>
-</section>
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .typewriter {
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 0px solid #ffe600;
+      font-size: 1.2rem;
+      width: 0;
+      animation: typing 4s steps(40, end) forwards, blink 0.75s step-end infinite;
+      margin: 0 auto;
+      color: #fff;
+    }
+
+    @keyframes typing {
+      to { width: 100%; }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    .timeline-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem;
+      padding: 0 1rem;
+      gap: 0.5rem;
+      animation: fadeIn 3s ease;
+      flex-wrap: wrap;
+    }
+
+    .timeline-column {
+      width: 45%;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .timeline-column:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+    }
+
+    .timeline-column h3 {
+      color: #ffe600;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+
+    .timeline-column ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .timeline-column li {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      color: #f1f1f1;
+    }
+
+    .timeline-column li i {
+      margin-right: 10px;
+      color: #ffe600;
+    }
+
+    footer h1 {
+      margin-top: 20px;
+      font-size: 1.6rem;
+      color: #ffe600;
+    }
 
     
+    
+
+  </style>
+</head>
+
+<body class="is-preload">
 
 
+  <!-- Header -->
+<header id="header" class="fixed-header">
+  <h1><a href="#intro">HARSHA KELADI GANAPATHI</a></h1>
 
-	<!-- One -->
-<section id="one" class="main style2 right dark fullscreen" style="background-color: #162447;">
-    <div class="content box style2">
-        <header>
-            <h2>What I Do</h2>
-        </header>
-        <p>Dedicated to the transformative power of data science, my journey began in high school, where a shift from disliking mathematical subjects to embracing the world of data analysis occurred. This evolution culminated in my leadership role in creating the "Areca Nut Tree Climbing and Pesticide Spraying Machine Using Android," securing the first prize at the 7th National Level IEEE Project Expo in 2023.
+   <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav">
+    <i class="fas fa-bars"></i>
+  </button>
 
-            As an Information Science Engineering graduate, my commitment to data science remained steadfast. Seeking to expand my knowledge, I pursued certification courses in Python programming, data analytics, and Tableau during my undergraduate studies. Interning in machine learning at Take It Smart OPC Pvt Ltd and interning in Data science at Solar Secure Solutions which lead into projects like "Machine Learning-Based Customer Segmentation" ,"Kannada Poets Image Classification" and "Hotel Booking Predictions" enriched my practical skills.
+  <nav id="nav" role="navigation">
+    <ul>
+      <li><a href="#Journey">My Journey</a></li>
+      <li><a href="#one">What I Do</a></li>
+      <li><a href="#two">Who I Am</a></li>
+      <li><a href="#works">My Work</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#Achievement">Achievements</a></li>
+      <li><a href="#research">Research Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://www.linkedin.com/in/harsha-keladi-ganapathi-442ab9234/" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+  </nav>
+</header>
 
-            My aspirations extend beyond personal growth; I actively participate in social initiatives, such as Swachh Bharat, digital awareness programs, and tutoring in rural villages. In sports, I served as the captain of college teams, leading them to consecutive championships.
+<section id="intro" class="main style1 dark fullscreen" style="position: relative; overflow: hidden;">
+  <div class="content">
+    <header>
+      <h2 style="color:#fdfdfd; font-size:5rem;">HARSHA •K•G</h2>
+      <p class="typewriter">Data Science • AI • Robotics • Agriculture Enthusiast</p>
+    </header>
 
-            Driven by a passion for social impact, I actively engage in various activities, embodying leadership in sports and contributing to societal well-being. This multifaceted approach reflects my commitment to academic excellence, personal growth, and making a positive difference in the world.</p>
-    </div>
-   
+    <a href="https://drive.google.com/file/d/1qpv3dFJ7sk78zZ4WR8IcWqLoAFqCjUVY/view" target="_blank" rel="noopener noreferrer">
+      <button class="button">Download Resume</button>
+    </a>
+
+    <!-- Animated Drones -->
+    <img src="images/thumbs/Drones-strategy-2.0-FEATURED-image-LIGHT_0-removebg-preview.png" class="drone drone1" alt="Flying Drone 1" />
+    <img src="images/thumbs/Drones-strategy-2.0-FEATURED-image-LIGHT_0-removebg-preview.png" class="drone drone2" alt="Flying Drone 2" />
+
+    <!-- Climbing Robot and Tree -->
+    <img src="images/thumbs/WhatsApp_Image_2025-06-09_at_16.33.08_07eec5ea-removebg-preview.png" class="robot" alt="Tree Climbing Robot" />
+    <img src="images/thumbs/silhouette-farmer-climbing-sugar-palm-tree-to-collection-sugar-syrup-countryside-thailand-93485055-removebg-preview.png" class="climber" alt="Climber Tree" />
+
+    <footer>
+      <a href="#Journey" class="button style2 down">More</a>
+      <h1>View My Portfolio</h1>
+    </footer>
+  </div>
 </section>
 
-<!-- Two -->
-<section id="two" class="main style2 left dark fullscreen" style="background-color: #00ea2b;">
-    <div class="content box style2">
-        <a href="images/thumbs/harsha.jpeg" class="fill"><img src="images/thumbs/harsha.jpeg" title="Air Lounge" alt="Harsha" width="200" height="150" /></a>
-        <header>
-            <h2>Who I Am</h2>
-        </header>
-        <p>"I am Harsha Keladi Ganapathi, originally from Keladi village in Sagara taluk, Karnataka, India. However, I was brought up in Mysuru, Karnataka. Currently, I am pursuing a Master of Science in Data Science at the University of New Haven, located in West Haven, Connecticut, USA.".</p>
+<style>
+/* General Body Styling */
+body {
+  background-color: #000;
+  background-image: url('images/fulls/agri_background.jpg');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Header Text Glow */
+#header h1 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #131313;
+  text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700;
+  padding-left: 0.1rem;
+  margin-bottom: -10.5rem;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fefefb, 0 0 20px #fdfdfd;
+  }
+  to {
+    text-shadow: 0 0 200px #ffdb58, 0 0 600px #ff4000;
+  }
+}
+
+/* Button Style */
+.button {
+  display: inline-block;
+  background-color: #171716;
+  color: #111;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 15px 24px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+  margin-top: 40px;
+}
+.button:hover {
+  background-color: #7b858f;
+}
+
+/* Content Container */
+.content {
+  margin: auto;
+  text-align: center;
+  max-width: 1000px;
+  color: rgb(10, 10, 10);
+  animation: fadeIn 2s ease;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Typewriter Effect */
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0px solid #ffe600;
+  font-size: 1.2rem;
+  width: 0;
+  animation: typing 4s steps(40, end) forwards, blink 0.75s step-end infinite;
+  margin: 0 auto;
+  color: #ffe600; /* golden yellow, matches agriculture + tech */
+  text-shadow: 0 0 6px rgba(0,0,0,0.6);
+
+}
+@keyframes typing {
+  to { width: 100%; }
+}
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+
+/* Flying Drones */
+.drone {
+  position: absolute;
+  width: 100px;
+  opacity: 0.85;
+  z-index: 3;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2));
+}
+.drone1 {
+  top: 15%;
+  left: -15%;
+  animation: droneFly1 18s linear infinite;
+}
+.drone2 {
+  top: 35%;
+  right: -20%;
+  animation: droneFly2 20s linear infinite;
+}
+@keyframes droneFly1 {
+  0% { left: -15%; top: 15%; transform: scale(0.9) rotate(5deg); }
+  50% { left: 50%; top: 10%; transform: scale(1) rotate(-3deg); }
+  100% { left: 110%; top: 12%; transform: scale(1.05) rotate(6deg); }
+}
+@keyframes droneFly2 {
+  0% { right: -20%; top: 35%; transform: scale(0.8) rotate(-5deg); }
+  50% { right: 60%; top: 25%; transform: scale(0.95) rotate(0deg); }
+  100% { right: 120%; top: 30%; transform: scale(1) rotate(4deg); }
+}
+
+/* Climber Tree */
+.climber {
+  position: fixed;
+  bottom: -40px;
+  left: -33%;
+  width: 400px;
+  opacity: 0.95;
+  animation: climber 12s ease-in-out infinite alternate;
+  z-index: 1;
+}
+
+@keyframes climber {
+  0%   { transform: translateY(-80px) rotate(0deg); }
+  50%  { transform: translateY(40px) rotate(0deg); }
+  100% { transform: translateY(-80px) rotate(0deg); }
+}
+
+
+/* Robot Climbing */
+.robot {
+  position: absolute;
+  bottom: 0;            /* anchor at base */
+  left: 11%;
+  width: 100px;
+  z-index: 2;
+  animation: robotBob 4s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+/* Gentle up/down from the base (no snap) */
+@keyframes robotBob {
+  0%   { transform: translateY(0) rotate(0deg); }
+  50%  { transform: translateY(-42px) rotate(-5deg); }
+  100% { transform: translateY(-84px) rotate(0deg); } /* adjust lift here */
+}
+
+
+/* Mobile Styling */
+@media screen and (max-width: 768px) {
+
+  #intro h2 {
+    font-size: 2.6rem !important;
+  }
+
+  .typewriter {
+    font-size: 1rem !important;
+    width: 100% !important;
+  }
+
+  .drone {
+    width: 120px !important;
+  }
+
+  .climber {
+    position: absolute !important;
+    width: 1200px !important;
+    height: 100% !important;
+    bottom: -120% !important;   /* keep near bottom */
+    left: -58% !important;
+    transform: rotate(0deg) !important;
+    display: block !important;
+    opacity: 1 !important;
+    z-index: 1 !important;
+    animation: manclimber 3s ease-in-out infinite alternate;
+  }
+
+  @keyframes manclimber {
+    0%   { transform: translateY(-120px) rotate(0deg); }
+    50%  { transform: translateY(0px) rotate(-10deg); }
+    100% { transform: translateY(0px) rotate(-15deg); }
+  }
+
+  .robot {
+    position: absolute !important;
+    bottom: -120% !important;   /* keep near bottom */
+    left: 37% !important;
+    width: 100px !important;
+    z-index: -2 !important;
+    animation: robotBobMobile 3s ease-in-out infinite alternate;
+  }
+
+  @keyframes robotBobMobile {
+    0%   { transform: translateY(-70px) rotate(0deg); }
+    50%  { transform: translateY(-12px) rotate(-10deg); }
+    100% { transform: translateY(0px) rotate(-15deg); }
+  }
+
+  body {
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: top center !important;
+    background-attachment: scroll !important;
+  }
+
+  #intro {
+    padding-bottom: 6rem;
+  }
+
+  .button {
+    padding: 10px 18px !important;
+    font-size: 14px !important;
+  }
+}
+</style>
+
+
+
+
+
+
+
+<!--My Journey-->
+<section id="Journey" class="journey-section">
+  <div class="journey-title">
+    <h2>My Journey</h2>
+    <p>From early curiosity to innovation in AI + Agriculture + Robotics 🚀</p>
+  </div>
+
+  <div class="journey-timeline">
+    <!-- Timeline blocks -->
+    <div class="timeline-block left">
+      <h3>Jan 2025 - July 2025</h3>
+      <p><i class="fas fa-briefcase"></i> Data Science Intern @ Infineon</p>
     </div>
-   
+    <div class="timeline-block right">
+      <h3>Aug 2024 - Dec 2024</h3>
+      <p><i class="fas fa-briefcase"></i> Teaching Assistant @ University of New Haven</p>
+    </div>
+    <div class="timeline-block left">
+      <h3>Jan 2024 - Dec 2025</h3>
+      <p><i class="fas fa-university"></i> MS Data Science – Univ. of New Haven,CT</p>
+    </div>
+
+    <div class="timeline-block right">
+      <h3>Feb 2024 - July 2024 </h3>
+      <p><i class="fas fa-briefcase"></i> ML Engineer Intern @ Omdena</p>
+    </div>
+    <div class="timeline-block left">
+      <h3>Sep 2023 - Nov 2023</h3>
+      <p><i class="fas fa-briefcase"></i> Data Science Intern @ Solar Secure Solutions </p>
+    </div>
+
+    <div class="timeline-block right">
+      <h3>May 2023</h3>
+      <p><i class="fas fa-trophy"></i>  FIRST PLACE IN 7th National Level IEEE Project Expo</p>
+    </div>
+
+    <div class="timeline-block left">
+      <h3>Aug 2022 - Sep 2022</h3>
+      <p><i class="fas fa-briefcase"></i> Machine Learning Intern  @ TIS Pvt Ltd</p>
+    </div>
+    <div class="timeline-block right">
+      <h3>July 2019 - July 2023</h3>
+      <p><i class="fas fa-school"></i> BE in Information Science - NIE Institute of Technology, Mysuru, India</p>
+    </div>
+
+    <!-- Road in center -->
+    <div class="timeline-road">
+      <img src="images/thumbs/car_moving.png" class="robot-walker robot-icon" alt="Walking Robot" />
+    </div>
+  </div>
+  <div style="text-align: center; margin-top: 3rem;">
+    <a href="#one" class="button style2 down">More</a>
+  </div>
+</section>
+
+
+<style>
+.journey-section {
+  background-color: #000;
+  color: white;
+  padding: 4rem 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.journey-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  border-bottom: 1px dashed #2b00ff;
+}
+
+.journey-timeline {
+  display: grid;
+  grid-template-columns: 1fr 60px 1fr;
+  row-gap: 3rem;
+  column-gap: 1rem;
+  position: relative;
+  max-width: 5000px;
+  margin: auto;
+}
+
+.timeline-block {
+  background: rgb(240, 9, 9);
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+}
+
+.timeline-block h3 {
+  color: #ffe600;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-block.left {
+  grid-column: 1;
+  text-align: right;
+}
+
+.timeline-block.right {
+  grid-column: 3;
+  text-align: left;
+}
+
+/* ROAD IN MIDDLE */
+.timeline-road {
+  grid-column: 2;
+  grid-row: 3 / -3;
+  border-left: 4px dashed #ffe600;
+  border-right: 4px dashed #ffe600;
+  position: relative;
+}
+
+.robot-walker {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 150px;
+  transform: translateX(-50%);
+  animation: robotClimb 10s linear infinite;
+  z-index: 2;
+}
+.robot-icon {
+  filter: drop-shadow(0 0 6px yellow) drop-shadow(0 0 12px orange);
+}
+
+@keyframes robotClimb {
+  0% { bottom: 0%; }
+  20% { bottom: 20%; }
+  40% { bottom: 40%; }
+  60% { bottom: 60%; }
+  80% { bottom: 80%; }
+  100% { bottom: 90%; }
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+  .journey-timeline {
+    grid-template-columns: 1fr !important;
+    row-gap: 2rem !important;
+  }
+
+  .timeline-block {
+    width: 90% !important;
+    text-align: center !important;
+    margin: auto;
+  }
+
+  .timeline-road {
+    display: none;  /* Optional: remove dashed road on mobile for clarity */
+  }
+
+  .robot-walker {
+    display: none; /* Or reposition it for vertical timeline */
+  }
+
+  .journey-title h2 {
+    font-size: 1.8rem;
+  }
+
+  .journey-title p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .journey-section {
+    padding: 0.1rem 0.1rem;
+    min-height: auto;
+    height: auto;
+    overflow: visible; /* <-- Add this line */
+  }
+
+  .journey-title h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #ffe600;
+  }
+
+  .journey-title p {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #fff;
+  }
+
+  .journey-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .timeline-block {
+    width: 50%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.5rem;
+  }
+
+  .timeline-road,
+  .robot-walker {
+    display: none !important;
+  }
+
+  .timeline-block h3 {
+    font-size: 1.1rem;
+  }
+
+  .timeline-block p {
+    font-size: 0.95rem;
+  }
+  .journey-section a.button.style2.down {
+    display: inline-block;
+    margin-top: 2rem;
+    margin-bottom: 3rem;  /* Add space below */
+  }
+}
+
+
+</style>
+
+
+
+	<!-- One (Simple: Robot on left, text on right) -->
+<section id="one" class="main style2 dark fullscreen">
+  <div class="simple-container">
+    
+    <!-- LEFT: Robot (desktop only) -->
+    <div class="robot-scene">
+      <img src="images/thumbs/robot_arm.png" alt="Robot Arm" class="robot-img" />
+    </div>
+
+    <!-- RIGHT: Text area -->
+    <div class="what-text">
+      <h2>What I Do</h2>
+      <p class="lead">I believe ideas deserve to fly — not lie on paper.</p>
+
+      <div class="extended">
+        <p>
+          I’ve always had the urge to not just observe ideas, 
+          but to shape them into something real. I believe ideas 
+          written on paper deserve to be folded and tested just like 
+          a paper plane, whether they fly high or not. 
+          For me, creation matters more than leaving imagination untouched.
+          <p>
+          My work lives in the space where gaps in systems meet solutions through AI, 
+          Computer Vision, Deep Learning, and Robotics. 
+          </p>
+          <p>
+          Growing up in a creative environment nurtured my curiosity and 
+          taught me to think differently, to question and to build. 
+          I still carry that mindset today: every learning I gain, I try to translate into something practical, 
+          whether it’s a research paper, an internship project, or an experiment of my own. 
+          Experience is valuable, but applying that experience with relevance makes the real difference.
+        </p>
+        
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Two -->
+<section id="two" class="main style2 dark fullscreen">
+  <div class="two-container">
+    
+    <!-- Left Side: Intro -->
+    <div class="intro-content">
+      <header>
+        <h2>Who I Am</h2>
+      </header>
+      <p>
+        I am Harsha Keladi Ganapathi, originally from Keladi village in Sagara taluk, 
+        Karnataka, India. However, I was brought up in Mysuru, Karnataka. My journey blends cultural roots, agrarian background, academic curiosity, and passion for sports and teaching. Currently, 
+        I’m pursuing my Master of Science in Data Science at the University of New Haven, CT, USA.
+      </p>
+    </div>
+
+    <!-- Right Side: Carousel -->
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <img src="images/me_pooje.jpg" alt="Pooja in temple">
+        <img src="images/trip_me_temple.jpg" alt="Tamil Nadu trip">
+        <img src="images/me_teach.jpg" alt="Teaching students">
+        <img src="images/thumbs/me_BB.jpg" alt="Holding basketball">
+        <img src="images/tropy_me.jpg" alt="Holding trophy">
+        <img src="images/teaching.jpg" alt="Teaching students">
+        <img src="images/me_pooje.jpg" alt="Pooja in temple">
+        <img src="images/trip_me_temple.jpg" alt="Tamil Nadu trip">
+        <img src="images/me_teach.jpg" alt="Teaching students">
+        <img src="images/thumbs/me_BB.jpg" alt="Holding basketball">
+        <img src="images/tropy_me.jpg" alt="Holding trophy">
+        <img src="images/teaching.jpg" alt="Teaching students">
+      </div>
+    </div>
+
+  </div>
 </section>
 
 			
@@ -121,7 +753,7 @@
 				<style>
 					/* Style for the first section */
 					#works {
-						background-color: #f50a0a; /* Light gray background */
+						background-color: #f30707; /* Light gray background */
 						padding: 50px 0; /* Add padding */
 					}
 			
@@ -148,6 +780,7 @@
 			
 			
 	<!-- Work -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <section id="works" class="main style3 primary">
     <div class="content">
         <header>
@@ -161,7 +794,32 @@
                 <img id="project1" src="images/thumbs/aare.webp" title="The Arecanut Tree Climbing and pestiscide spraying Machine" alt="Data" />
                 <h3>Arecanut Tree climbing and Pestiscide spraying machine using Android</h3>
                 <button onclick="redirectToGitHub('https://github.com/HarshaKGBhat/Arecanut-Tree-Climbing-and-Pestiscide-spraying-machine-')">View on GitHub</button>
+                <button onclick="redirectToYoutube('https://youtube.com/shorts/9apJAuTHLB0')">View on YouTube</button>
             </article>
+
+            <article class="from-left">
+                <img id="project1" src="images/thumbs/connect4_game.png" title="The Connect4 " alt="Connect4" />
+                <h3>Connect4_AI_Game</h3>
+                <button onclick="redirectToGitHub('https://github.com/HarshaKGBhat/Connect4_AI_Game')">View on GitHub</button>
+                <button onclick="redirectToYoutube('https://www.youtube.com/watch?v=mRsve1_fB0Y')">View on YouTube</button>
+            </article>
+            
+
+             <article class="from-left">
+                <img id="project1" src="images/thumbs/bi.png" title="The Semantic segmentaion of UNH Gym Dataset" alt="Semantic segmentaion" />
+                <h3>Semantic Segmentation of Activated Muscles During Exercise Using Custom UNH Gym Dataset</h3>
+                <button onclick="redirectToGitHub('https://github.com/HarshaKGBhat/Semantic-Segmentation-of-Activated-Muscles-During-Exercise-Using-Custom-UNH-Gym-Dataset')">View on GitHub</button>
+
+            </article>
+
+            <article class="from-left">
+                <img id="project1" src="images/thumbs/OIP.jpg" title="The Agri ROI" alt="Agri ROI" />
+                <h3>Agricultural ROI Analysis</h3>
+                <button onclick="redirectToGitHub('https://github.com/HarshaKGBhat/Agricultural_ROI_Analysis')">View on GitHub</button>
+                <button onclick="redirectToYoutube('https://youtu.be/ucCZiiS-Lzw')">View on YouTube</button>
+            </article>
+        
+
             <article class="from-right">
                 <img id="project2" src="images/thumbs/tt.png" title="Machine-Learning-Based-Customer-Segmentation-in-Shopping-Malls" alt="Data" />
                 <h3>Machine Learning Based Customer Segmentation in Shopping Malls</h3>
@@ -246,28 +904,28 @@
             
                 <article class="from-left">
                     <a href="" class="image fit">
-                        <img src="images/thumbs/NPTEL.png" title="The Anonymous Red" alt="" />
+                        <img src="images/thumbs/NPTEL.png" title="The NPTEL Course" alt="" />
                     </a>
                     <h3>Data Analytics With Python</h3>
                     <button onclick="window.location.href = 'images/thumbs/dp.jpeg'">Show Details</button>
                 </article>
                 <article class="from-right">
                     <a href="" class="image fit">
-                        <img src="images/thumbs/NPTEL.png" title="The Anonymous Red" alt="" />
+                        <img src="images/thumbs/NPTEL.png" title="The NPTEL Course" alt="" />
                     </a>
                     <h3>Joy of Computing using Python</h3>
                     <button onclick="window.location.href = 'images/thumbs/j.jpg'">Show Details</button>
                 </article>
             <article class="from-left">
                     <a href="" class="image fit">
-                        <img src="images/thumbs/GL.jpeg" title="The Anonymous Red" alt="" />
+                        <img src="images/thumbs/GL.jpeg" title="The GL Course" alt="" />
                     </a>
                     <h3>Tableau</h3>
                     <button onclick="window.location.href = 'images/thumbs/GG.jpeg'">Show Details</button>
                 </article>
                 <article class="from-right">
                     <a href="" class="image fit">
-                        <img src="images/thumbs/th.jpeg" title="The Anonymous Red" alt="" />
+                        <img src="images/thumbs/th.jpeg" title="The International Level Student Workshop 2024 on Data Science using Python" alt="" />
                     </a>
                     <h3>International Level Student Workshop 2024 on Data Science using Python </h3>
                     <button onclick="window.location.href = 'images/thumbs/WW.jpeg'">Show Details</button>
@@ -331,9 +989,6 @@
 </head>
 <body>
 
-
-			
-
 <!-- Achievement -->
 <section id="Achievement" class="main style3 primary">
     <div class="content">
@@ -343,11 +998,10 @@
         </header>
         <!-- Gallery -->
         <div class="gallery">
-            <!-- Article content goes here -->
             <div class="row">
                 <article class="from-left">
-                    <a href="images/thumbs/s.png" class="image fit">
-                        <img src="images/thumbs/th (3).jpeg" title="Arecanut Tree Climbing and pestiscide spraying machine alt="" />
+                    <a href="images/thumbs/areca_final_img.jpg" class="image fit">
+                        <img src="images/thumbs/th (3).jpeg" title="Team photo of Arecanut machine project" />
                     </a>
                     <h3>Secured First place in the 7th National Level IEEE Project Expo 2023.</h3>
                     <button onclick="window.location.href = 'images/thumbs/s.png'">Show Details</button>
@@ -356,7 +1010,7 @@
                     <a href="images/thumbs/W.jpeg" class="image fit">
                         <img src="images/thumbs/BB1.jpg" title="Basketball" alt="" />
                     </a>
-                    <h3>Secured First place in the Basketball at  National Level Games 2021 Mysuru, India.</h3>
+                    <h3>Secured First place in the Basketball at National Level Games 2021 Mysuru, India.</h3>
                     <button onclick="window.location.href = 'images/thumbs/W.jpeg'">Show Details</button>
                 </article>
             </div>
@@ -374,154 +1028,194 @@
                         <img src='images/thumbs/Bball.jpeg' title="Baseball" alt="" />
                     </a>
                     <h3>Secured Fourth Place In the State Level Baseball Tournament</h3>
-                    <button onclick= "window.location.href = 'images/fulls/Baseball.jpeg'">Show Details</button>
+                    <button onclick="window.location.href = 'images/fulls/Baseball.jpeg'">Show Details</button>
                 </article>
             </div>
             
             <div class="row">
                 <article class="from-left">
                     <a href="images/fulls/RP.jpeg" class="image fit">
-                        <img src="images/thumbs/role play 1.jpg" title="The Anonymous Red" alt="" />
+                        <img src="images/thumbs/role play 1.jpg" title="The Role play" alt="" />
                     </a>
-                    <h3>Secured First place in the National Level Role Play competion held at Delhi.</h3>
+                    <h3>Secured First place in the National Level Role Play competition held at Delhi.</h3>
                     <button onclick="window.location.href = 'images/fulls/RP.jpeg'">Show Details</button>
                 </article>
                 <article class="from-right">
                     <a href="images/fulls/NCC.jpeg" class="image fit">
                         <img src="images/thumbs/th (1).jpeg" title="The NCC A certificate" alt="" />
                     </a>
-                    <h3>Secured A certificate in the National Cadet Corps(NCC).</h3>
+                    <h3>Secured A certificate in the National Cadet Corps (NCC).</h3>
                     <button onclick="window.location.href = 'images/fulls/NCC.jpeg'">Show Details</button>
                 </article>
             </div>
         </div>
     </div>
-   
+</section>
+
+<!-- Research Work -->
+<section id="research" class="research-section">
+  <h2>Research Experience</h2>
+  <p>Showcasing my work in AI, Agriculture, and Robotics.</p>
+
+  <div class="research-grid">
+
+    <!-- Tile 1: ICMLDE Project -->
+    <div class="research-tile" style="background-image: url('images/fulls/agri_background.jpg');">
+      <div class="overlay">
+        <h3>A Comprehensive Evaluation of Machine Learning Algorithms for Harvested Arecanut Variety Classification and Detection</h3>
+        <p>Developed ML and DL models to classify and Detect harvested Arecanuts using computer vision techniques.</p>
+        <div class="tile-buttons">
+          <a href="https://github.com/HarshaKGBhat/Harvested-Arecanut-Variety-Classification-using-ML" target="_blank" class="btn">GitHub</a>
+          <a href="https://drive.google.com/file/d/1MEcn5DD7QvceaY8lNB_gyS4Z6Yg4aYA7/view?usp=sharing " target="_blank" class="btn">Paper</a>
+          <a href="https://www.youtube.com/watch?v=xnNaI6ESe08" target="_blank" class="btn">YouTube</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tile 2: MSL Project (In Progress) -->
+    <div class="research-tile" style="background-image: url('images/thumbs/MSL.jpg');">
+      <span class="badge">In Progress</span>
+      <div class="overlay">
+        <h3>Object Detection and Multi-step Lookahead-Based Navigation Framework for Nut-harvesting Robotic Applications</h3>
+        <p>Developed a Multi-Step Lookahead (MSL) algorithm for efficient nut collection in orchards and Built a YOLOv8 based simulation framework with automated nut detection.</p>
+        <div class="tile-buttons">
+          <a href="#" class="btn disabled">Coming Soon</a>
+          <a href="https://drive.google.com/file/d/1_FEZ_REUD81E_K13PQ1iuI0vrQ9-s4qI/view?usp=sharing" target="_blank" class="btn">Demo Paper</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tile 3: Data Fusion Project (In Progress) -->
+    <div class="research-tile" style="background-image: url('images/thumbs/psa_fused_sample_78.png');">
+      <span class="badge">In Progress</span>
+      <div class="overlay">
+        <h3>Visual Concept: Fusion of Structured Tabular Data & Images for GAN-based Synthetic Image Generation</h3>
+        <p>Experimenting with methods to embed converted tabular data into heatmaps to blend with images for enhanced feature learning in CNN models.</p>
+        <div class="tile-buttons">
+          <a href="#" class="btn disabled">Coming Soon</a>
+        
+        </div>
+      </div>
+    </div>
+
+    <!-- Tile 4: Arecanut Climbing Machine -->
+    <div class="research-tile" style="background-image: url('images/fulls/H.jpeg');">
+      <div class="overlay">
+        <h3>“ARECA NUT TREE CLIMBING AND PESTICIDE SPRAYER MACHINE USING ANDROID”</h3>
+        <p>Innovative machine for climbing and spraying arecanut trees, awarded First Place at IEEE Project Expo 2023.</p>
+        <div class="tile-buttons">
+          <a href="https://github.com/HarshaKGBhat/Arecanut-Tree-Climbing-and-Pestiscide-spraying-machine-" target="_blank" class="btn">GitHub</a>
+          <a href="https://drive.google.com/file/d/1DkKjfKEViHNt4jgHLS4GJa3fOlOM57Qe/view?usp=sharing" target="_blank" class="btn">Paper</a>
+          <a href="https://youtube.com/shorts/YpFZTt4FpT8?feature=share" target="_blank" class="btn">YouTube</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </section>
 
 
-
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Skills Showcase</title>
+<!-- Research Work CSS -->
 <style>
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #487c03;
-    color: #fff;
-    margin: 0;
-    padding: 0;
+/* Research Section */
+.research-section {
+  background: #893c3c;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(520px, 2fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+@media (max-width: 768px) {
+  .research-grid {
+    grid-template-columns: 1fr; /* 1 per row on mobile */
   }
-  #skills {
-    text-align: center;
-    padding: 50px 0;
-  }
-  .row {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-  }
-  .skill {
-    width: calc(50% - 20px);
-    margin: 0 10px;
-    margin-bottom: 20px;
-  }
-  .skill-label {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  .progress {
-    height: 30px;
-    background-color: #d3d2d2;
-    border-radius: 15px;
-    overflow: hidden;
-    margin: 0 auto;
-  }
-  .progress-bar {
-    height: 100%;
-    background-color: #0606ef;
-    text-align: center;
-    line-height: 30px;
-    color: white;
-    transition: width 0.5s ease;
-  }
+}
+.research-tile {
+  position: relative;
+  height: 280px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.research-tile:hover {
+  transform: scale(1.03);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  width: 100%;
+  padding: 1rem;
+  text-align: left;
+  transform: translateY(100%);
+  transition: transform 0.4s ease-in-out;
+}
+
+.research-tile:hover .overlay {
+  transform: translateY(0);
+}
+
+.overlay h3 {
+  margin-bottom: 0.1rem;
+  color: #ffe600;
+}
+
+.overlay p {
+  font-size: 0.72rem;
+}
+
+.tile-buttons {
+  margin-top: 0.4rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.1rem 0.8rem;
+  background: #ffe600;
+  color: #111;
+  font-weight: bold;
+  border-radius: 3px;
+  text-decoration: none;
+  margin-right: 0.5rem;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #ff0015;
+}
+
+.btn.disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+.badge {
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  background: rgb(65, 181, 42);
+  color: rgb(255, 255, 255);
+  font-size: 0.6rem;
+  padding: 0.1px 0.1px;
+  border-radius: 1px;
+  z-index: 1;
+}
+.badge:hover {
+  background: #2704d2;
+}
+
 </style>
-</head>
-<body>
-
-<section id="skills">
-  <header>
-    <h2>My Skills</h2>
-    <p>Below are my skills with measurements:</p>
-  </header>
-  <div class="row">
-    <div class="skill">
-      <div class="skill-label">Python</div>
-      <div class="progress">
-        <div class="progress-bar" style="width: 90%;">90%</div>
-      </div>
-    </div>
-    <div class="skill">
-      <div class="skill-label">Django</div>
-      <div class="progress">
-        <div class="progress-bar" style="width: 75%;">75%</div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="skill">
-      <div class="skill-label">Power BI</div>
-      <div class="progress">
-        <div class="progress-bar" style="width: 70%;">70%</div>
-      </div>
-    </div>
-    <div class="skill">
-        <div class="skill-label">Tableau</div>
-        <div class="progress">
-          <div class="progress-bar" style="width: 85%;">85%</div>
-        </div>
-        
-       
-    <!-- Add more skills as needed -->
-  </div>
-  <div class="row">
-    <div class="skill">
-      <div class="skill-label">MySQL</div>
-      <div class="progress">
-        <div class="progress-bar" style="width: 80%;">80%</div>
-      </div>
-    </div>
-    <div class="skill">
-      <div class="skill-label">NoSQL</div>
-      <div class="progress">
-        <div class="progress-bar" style="width: 65%;">65%</div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="skill">
-      <div class="skill-label">PostgreSQL</div>
-      <div class="progress">
-        <div class="progress-bar" style="width: 70%;">70%</div>
-      </div>
-    </div>
-    <div class="skill">
-        <div class="skill-label">Oracle</div>
-        <div class="progress">
-          <div class="progress-bar" style="width: 75%;">75%</div>
-        </div>
-        
-       
-    <!-- Add more skills as needed -->
-  </div>
-</section>
-
-
-
-
-
 
 <!-- Contact -->
 <section id="contact" class="main style3 secondary" style="background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%);">
@@ -539,8 +1233,7 @@
                 padding: 20px;
                 width: 350px;
                 margin: 0 auto;
-                margin-bottom: 0px; /* Add space between bottom margin and box */
-                
+                margin-bottom: 0px;
             }
         
             .contact-info h3 {
@@ -559,7 +1252,7 @@
         
             .contact-info ul li p {
                 font-weight: bold;
-                color: #495057;
+                color: #495057fa;
             }
         
             .contact-info ul li span::before {
@@ -572,16 +1265,18 @@
             }
         </style>
             
-            <div class="contact-info">
-                <h3>Contact Information</h3>
-                <ul>
-                    <li><p>🏠 Address:</p> 1314 Quinnipiac Ave,Unit 7, New Haven,CT,United states of America</li>
-                    <li><p>✉️ Email:</p> <a href="mailto:harshabhatkg@gmail.com" class="contact-item-link">harshabhatkg@gmail.com</a></li>
-                    <li><p>☎️ Phone:</p> <a href="tel:+1(732)-470-4541" class="contact-item-link">+1 (732)-470-4541</a></li>
-                </ul>
-            </div>
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <ul>
+                <li><p>🏠 Address:</p> West Haven, CT, United States of America</li>
+                <li><p>✉️ Email:</p> <a href="mailto:harshabhatkg@gmail.com" class="contact-item-link">harshabhatkg@gmail.com</a></li>
+                <li><p>☎️ Phone:</p> <a href="tel:+1(732)-470-4541" class="contact-item-link">+1 (732)-470-4541</a></li>
+            </ul>
+        </div>
     </div>
 </section>
+
+			
 
 		<!-- Footer -->
 			<footer id="footer">
@@ -613,6 +1308,35 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+
+        <!-- Your other content -->
+
+  <!-- JavaScript for hamburger toggle -->
+  <script>
+    (function () {
+      const toggle = document.getElementById('menu-toggle');
+      const nav = document.getElementById('nav');
+      const links = nav.querySelectorAll('a');
+
+      // Toggle menu open/close
+      toggle.addEventListener('click', () => {
+        const open = nav.classList.toggle('active');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+
+      // Close menu when a link is clicked
+      links.forEach(link => {
+        link.addEventListener('click', () => {
+          nav.classList.remove('active');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>
 
 	</body>
 </html>
